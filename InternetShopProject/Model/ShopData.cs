@@ -1,4 +1,4 @@
-using InternetShopProject.Model.ShopEntities;
+﻿using InternetShopProject.Model.ShopEntities;
 using InternetShopProject.Model.Tools;
 using System;
 using System.Collections.Generic;

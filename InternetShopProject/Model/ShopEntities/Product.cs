@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace InternetShopProject.Model.ShopEntities
 {
-    public class Product
+    [Serializable]
+    public class Product : IReadOnlyProduct
     {
         private static int _id;
 
@@ -23,10 +24,11 @@ namespace InternetShopProject.Model.ShopEntities
             _id = 0;
         }
 
-        public Product(int cost,string title, int size, string specifications,string manufacturer, Category category)
+        public Product(int cost, string title, int size, string specifications, string manufacturer, Category category)
         {
             ID = ++_id;
             Cost = cost;
+            Title = title;
             Size = size;
             Specifications = specifications;
             Manufacturer = manufacturer;
@@ -35,18 +37,39 @@ namespace InternetShopProject.Model.ShopEntities
 
         public void Update(int cost = -1, Category category = null, string title = "", int size = -1, string specifications = "", string manufacturer = "")
         {
-            if(cost != -1)
+            if (cost != -1)
                 Cost = cost;
-            if(category != null)
+            if (category != null)
                 Category = category;
-            if(title != "")
+            if (title != "")
                 Title = title;
-            if(size != -1)
+            if (size != -1)
                 Size = size;
             if (specifications != "")
                 Specifications = specifications;
             if (manufacturer != "")
                 Manufacturer = manufacturer;
         }
+
+        public static int GetCurrentId()
+        {
+            return _id;
+        }
+
+        public static void SetCurrentId(int id)
+        {
+            _id = id;
+        }
+    }
+
+    public interface IReadOnlyProduct
+    {
+        int ID { get; }
+        int Cost { get; }
+        string Title { get; }
+        int Size { get; }
+        string Specifications { get; }
+        string Manufacturer { get; }
+        Category Category { get; }
     }
 }
