@@ -8,8 +8,14 @@ namespace InternetShopProject.Model.ShopEntities
 {
     class Basket
     {
-        public List<Product> BacketProducts { get; private set; }
-        public int BasketProductsCount { get; private set; }
+        public List<Product> Product { get; private set; }
+        public int ProductsCount { get; private set; }    
+
+        public Basket(List<Product> products, int productsCount)
+        {
+            Product = products;
+            ProductsCount = productsCount;
+        }
 
     }
 }
