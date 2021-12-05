@@ -1,0 +1,9 @@
+D:\OnlineLessonsC#\InternetShopProject\bin\Debug\InternetShopProject.exe.config
+D:\OnlineLessonsC#\InternetShopProject\bin\Debug\InternetShopProject.exe
+D:\OnlineLessonsC#\InternetShopProject\bin\Debug\InternetShopProject.pdb
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.csprojAssemblyReference.cache
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.Properties.Resources.resources
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.csproj.GenerateResource.cache
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.csproj.CoreCompileInputs.cache
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.exe
+D:\OnlineLessonsC#\InternetShopProject\obj\Debug\InternetShopProject.pdb
